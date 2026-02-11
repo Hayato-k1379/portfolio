@@ -15,9 +15,12 @@
   --font-decorative: 'Zen Old Mincho', serif;
   --font-body: 'Zen Kaku Gothic New', sans-serif;
 
-  /* Font Weights (default: English) */
-  --fw-light: 400;
-  --fw-regular: 500;
+
+  /* Weight */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fs-body-ja: calc(var(--fs-body) * 0.9);
 
   /* Font Sizes (Scale) */
   --fs-hero: calc(80 * var(--scale));
@@ -31,14 +34,6 @@
 
   /* Line */
   --border-line: 1px solid #000000;
-}
-
-/* Japanese: lighter weights */
-:lang(ja) {
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fs-body-ja: calc(var(--fs-body) * 0.9);
 }
 
 /* Reset */
@@ -90,15 +85,15 @@ img {
    Link Hover Effect (Dot)
 ======================================== */
 .header__nav-link,
-.info__contact-link,
-.info__contact-email {
+.contact__link,
+.contact__email {
   position: relative;
   display: inline-block;
 }
 
 .header__nav-link::after,
-.info__contact-link::after,
-.info__contact-email::after {
+.contact__link::after,
+.contact__email::after {
   content: '';
   position: absolute;
   bottom: calc(-8 * var(--scale));
@@ -113,8 +108,8 @@ img {
 }
 
 .header__nav-link:hover::after,
-.info__contact-link:hover::after,
-.info__contact-email:hover::after {
+.contact__link:hover::after,
+.contact__email:hover::after {
   opacity: 1;
 }
 
@@ -133,7 +128,7 @@ img {
 
 .header__logo {
   font-size: var(--fs-body);
-  font-weight: 500;
+  font-weight: var(--fw-regular);
 }
 
 .header__nav {
@@ -352,7 +347,7 @@ img {
 
 .about__label {
   font-size: var(--fs-body);
-  font-weight: 500;
+  font-weight: var(--fw-regular);
   min-width: calc(80 * var(--scale));
 }
 
@@ -370,7 +365,7 @@ img {
 
 .work__label {
   font-size: var(--fs-body);
-  font-weight: 500;
+  font-weight: var(--fw-regular);
   margin-bottom: calc(20 * var(--scale));
 }
 
@@ -434,56 +429,71 @@ img {
 }
 
 /* ========================================
-   Info (History / Skills / Contact)
+   Info Area (History / Skills / Contact)
 ======================================== */
-.info {
+.info-area {
   padding: calc(40 * var(--scale)) 0;
 }
 
-.info__inner {
+.info-area__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: calc(40 * var(--scale));
 }
 
-.info__column--contact {
-  grid-column: 1;
-}
-
-.info__heading {
-  font-size: var(--fs-heading);
-  font-weight: 500;
+/* History */
+.history__label {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
   margin-bottom: calc(40 * var(--scale));
 }
 
-.info__block {
+.history__block {
   margin-bottom: calc(48 * var(--scale));
 }
 
-.info__block-title {
+.history__block-title {
   font-size: var(--fs-body);
-  font-weight: 500;
+  font-weight: var(--fw-regular);
   margin-bottom: calc(16 * var(--scale));
   line-height: 1.6;
 }
 
-.info__block-text {
+.history__block-text {
   font-size: var(--fs-body-ja, var(--fs-body));
   line-height: 1.8;
 }
 
-.info__list {
+/* Skills */
+.skills__label {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  margin-bottom: calc(40 * var(--scale));
+}
+
+.skills__list {
   font-size: var(--fs-body);
   line-height: 2.0;
 }
 
-.info__contact-link {
+/* Contact */
+.contact {
+  grid-column: 1;
+}
+
+.contact__label {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  margin-bottom: calc(40 * var(--scale));
+}
+
+.contact__link {
   display: block;
   font-size: var(--fs-body);
   margin-bottom: calc(16 * var(--scale));
 }
 
-.info__contact-email {
+.contact__email {
   display: block;
   font-size: var(--fs-body);
 }
