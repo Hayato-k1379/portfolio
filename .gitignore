@@ -1,0 +1,17 @@
+/vendor/
+.env
+.env.*
+env/.env
+env/.env.*
+env/*.local
+env/*.secret
+storage/cache/*.json
+storage/*.log
+composer.phar
+/public/assets/dist
+
+# macOS
+.DS_Store
+
+#Design
+Wireframe.png

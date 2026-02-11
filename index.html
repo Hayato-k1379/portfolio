@@ -1,281 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css" />
-    <!-- Material Symbols (Outlined) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=470, initial-scale=1.0, shrink-to-fit=yes">
+  <title>Haachan Studio '26</title>
+  <meta name="description" content="LP & Corporate Website Design - I design simple, clear websites for small businesses and individuals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Old+Mincho:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner container">
+      <a href="#" class="header__logo">はーちゃんStudio</a>
+      <nav class="header__nav">
+        <a href="#work" class="header__nav-link">Work</a>
+        <a href="#about" class="header__nav-link">About</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- ===== Hero ===== -->
-    <section id="hero" class="section-hero">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Welcome</p>
-          <h1>はーちゃんStudio<br>
-            ポートフォリオ
+  <main>
+    <!-- Hero -->
+    <section class="hero reveal">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Haachan<br>
+            Studio<br>
+            '26.
           </h1>
-          <p class="lead">
-            元消防士としての経験をもとに、<br>
-            Web制作と発信設計を掛け合わせたクリエイティブを発信しています。
+          <p class="hero__subtitle">
+            LP & Corporate Website Design<br>
+            I design simple, clear websites<br>
+            for small businesses and individuals.
           </p>
-          <div class="hero-actions">
-            <a href="#projects" class="hero-btn hero-primary">実績を見る</a>
-            <a href="#contact" class="hero-btn hero-outline">連絡する</a>
-          </div>
         </div>
-
-        <div class="hero-visual">
-          <div class="hero-placeholder">
-            <span>Animation Area</span>
+        <div class="hero__image" aria-hidden="true">
+          <!-- RGB Slice Parade (No Image - CSS Only) -->
+          <div class="hero__slices">
+            <span class="hero__slice hero__slice--1"></span>
+            <span class="hero__slice hero__slice--2"></span>
+            <span class="hero__slice hero__slice--3"></span>
+            <span class="hero__slice hero__slice--4"></span>
+            <span class="hero__slice hero__slice--5"></span>
+            <span class="hero__slice hero__slice--6"></span>
+            <span class="hero__slice hero__slice--7"></span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== About ===== -->
-    <section id="about" class="section-about">
-      <div class="wrapper about-inner">
-        <div class="about-text">
-          <p class="eyebrow">About</p>
-          <h2>人の「らしさ」を伝えるためのWeb制作を。</h2>
-          <p>
-            はじめまして、<strong>はーちゃんStudio</strong>のはーちゃんです。元消防士として勤務しながら独学でWeb制作・アプリ開発を学びました。
-            現在は、<strong>「人の想いを正確に伝えるWeb制作」</strong>をテーマに活動しています。
-          </p>
-          <p>
-            デザインからコーディング、簡単なバックエンド、SPA構築まで一人で完結できる体制をとり、
-            小さな個人でも「発信できるかたち」を持てるようにするのがゴールです。
-          </p>
+    <!-- About -->
+    <section id="about" class="about reveal">
+      <div class="about__inner container">
+        <h2 class="about__label">About</h2>
+        <p class="about__text">
+          はーちゃんStudioは<br>
+          個人・小規模事業者向けに<br>
+          LP・コーポレートサイトを制作しています。<br>
+          目的を整理し、<br>
+          伝わりやすい構成を大切にしています。
+        </p>
+      </div>
+    </section>
 
-          <div class="about-pillars">
-            <h3>制作理念</h3>
-            <ul>
-              <li><strong>見た目だけでなく、伝わることを優先する</strong></li>
-              <li><strong>使いやすさ・更新しやすさを前提に設計する</strong></li>
-              <li><strong>独学者として常に学び、改善を続ける</strong></li>
-            </ul>
-            <p class="about-meta">
-              「かっこいい」だけでなく、「運用を続けられるサイト」を大切にしています。
+    <!-- Work -->
+    <section id="work" class="work">
+      <div class="container" data-stagger>
+        <h2 class="work__label reveal">Work</h2>
+        <article class="work__item reveal">
+          <div class="work__item-header">
+            <h3 class="work__item-title">ACE CARPLUS</h3>
+            <span class="work__item-year">2025</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- History / Skills / Contact -->
+    <section class="info">
+      <div class="info__inner container">
+        <!-- History -->
+        <div data-stagger>
+          <h3 class="info__heading reveal">History</h3>
+
+          <div class="info__block">
+            <h4 class="info__block-title reveal">
+              Freelance Web Designer<br>
+              2025 – Present
+            </h4>
+            <p class="info__block-text reveal">
+              LP・コーポレートサイトを中心に、個人・小規模事業者向けのWeb制作を行う。構成設計からデザイン、実装まで一貫して対応。
+            </p>
+          </div>
+
+          <div class="info__block">
+            <h4 class="info__block-title reveal">
+              Personal & Practice Projects<br>
+              2020 – 2024
+            </h4>
+            <p class="info__block-text reveal">
+              ベンチャー企業での修行や自主制作を通じて、Webデザインとフロントエンド実装を学ぶ。情報設計と可読性を重視した制作を継続。
+            </p>
+          </div>
+
+          <div class="info__block">
+            <h4 class="info__block-title reveal">
+              Other Professional Experience
+            </h4>
+            <p class="info__block-text reveal">
+              異なる業界での実務経験を通じて、責任感と丁寧なコミュニケーションを培う。
             </p>
           </div>
         </div>
 
-        <div class="about-card">
-          <div class="about-card-body">
-            <h3>プロフィール</h3>
-            <ul>
-              <li><span>名前</span><strong>はーちゃん</strong></li>
-              <li><span>前職</span><strong>消防士</strong></li>
-              <li><span>現在</span><strong>Web制作 / 発信設計</strong></li>
-              <li><span>得意</span><strong>SPA構築・生成AI活用</strong></li>
-            </ul>
-          </div>
-          <p class="about-note">
-            クラウドワークス・ランサーズでの案件利用を想定した構成です。
-          </p>
+        <!-- Skills -->
+        <div data-stagger>
+          <h3 class="info__heading reveal">Skills</h3>
+          <ul class="info__list reveal">
+            <li>Website Planning</li>
+            <li>LP & Corporate Design</li>
+            <li>Information Architecture</li>
+            <li>UI Design</li>
+            <li>Front-end Development</li>
+            <li>Client Communication</li>
+          </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- ===== Service ===== -->
-    <section id="service" class="section-service">
-      <div class="service-wrapper">
-        <p class="eyebrow">Service</p>
-        <h2>提供できること</h2>
-        <p class="lead">
-          現場で培った責任感と、独学で身につけた制作スキルを組み合わせて、個人でも発信しやすいWebの形をつくります。
-        </p>
-
-        <div class="service-list">
-          <article class="service-item">
-            <div class="service-icon">
-              <span class="material-symbols-outlined">computer</span>
-            </div>
-            <h3>HP / LP制作</h3>
-            <p>企業・個人向けのWebサイトを、スマホ対応前提で構築します。</p>
-          </article>
-          <article class="service-item">
-            <div class="service-icon">
-              <span class="material-symbols-outlined">psychiatry</span>
-            </div>
-            <h3>SPA構築（Vue/React）</h3>
-            <p>診断・ダッシュボード・管理画面など、動きのある画面を実装します。</p>
-          </article>
-          <article class="service-item">
-            <div class="service-icon">
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-            <h3>発信のトーン設計</h3>
-            <p>note / Xの文体やタグルールを揃え、ブランドとしての一貫性を高めます。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Activity ===== -->
-    <section id="activity" class="section-activity">
-      <div class="activity-wrapper">
-        <h2>Now / Activity</h2>
-        <ul class="activity-list">
-          <li>
-            <span class="material-symbols-outlined">edit</span>
-            HP作成案件受注：中古車販売店HP作成中
-          </li>
-          <li>
-            <span class="material-symbols-outlined">developer_mode</span>
-            Big-Five-App：結果詳細UI作成中
-          </li>
-          <li>
-            <span class="material-symbols-outlined">share</span>
-            note：毎月<strong>15件</strong>投稿継続
-          </li>
-        </ul>
-        <div class="activity-instagram">
-          <div class="instagram-card">
-            <div class="instagram-placeholder">
-              <span>最新投稿 1</span>
-            </div>
+        <!-- Contact -->
+        <div class="info__column--contact" data-stagger>
+          <h3 class="info__heading reveal">Contact</h3>
+          <div class="reveal">
+            <a href="#" class="info__contact-link">[ Contact Form ]</a>
           </div>
-          <div class="instagram-card">
-            <div class="instagram-placeholder">
-              <span>最新投稿 2</span>
-            </div>
+          <div class="reveal">
+            <a href="mailto:contact.haachan.studio@gmail.com" class="info__contact-email">contact.haachan.studio@gmail.com</a>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- ===== Skills ===== -->
-    <section id="skills" class="section-skills">
-      <div class="skills-wrapper">
-        <div class="skills-head">
-          <p class="eyebrow">Skills</p>
-          <h2>制作と発信をつなぐスキルセット。</h2>
-          <p class="lead">コードだけで終わらず、コンテンツに落とすところまでを想定しています。</p>
-        </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <p class="footer__copyright">2026 Haachan Studio</p>
+    </div>
+  </footer>
 
-        <div class="skills-grid">
-
-          <article class="skill-card">
-            <div class="skill-icon">
-              <span class="material-symbols-outlined">language</span>
-            </div>
-            <h3>Web & 静的デプロイ</h3>
-            <p>Vercel / Xserver / さくらなど複数環境に同一ファイルで展開可能です。</p>
-            <ul>
-              <li>HTML / CSS / JS</li>
-              <li>SPA設計</li>
-              <li>複数サーバー反映</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <div class="skill-icon">
-              <span class="material-symbols-outlined">map</span>
-            </div>
-            <h3>発信・運用設計</h3>
-            <p>note・Xの世界観設計を実運用中。文章トーンを指定できます。</p>
-            <ul>
-              <li>note記事構成</li>
-              <li>X朝夜ポスト設計</li>
-              <li>LPテキストたたき</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <div class="skill-icon">
-              <span class="material-symbols-outlined">psychology</span>
-            </div>
-            <h3>生成AI活用</h3>
-            <p>ChatGPT / Midjourney / Canvaでアウトプットを高速化します。</p>
-            <ul>
-              <li>プロンプト設計</li>
-              <li>画像・テキスト生成</li>
-              <li>ワークフロー化</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Projects ===== -->
-    <section id="projects" class="section-projects">
-      <div class="projects-wrapper">
-        <div class="projects-head">
-          <p class="eyebrow">Projects</p>
-          <h2>制作・開発の実践事例。</h2>
-          <p class="lead">現在進行中のアプリケーションと、世界観を載せるためのSPAサイトです。</p>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Big-Five-App -->
-          <article class="project-card">
-            <div class="project-thumb project-thumb-blue">
-              <span class="material-symbols-outlined">psychology</span>
-            </div>
-            <div class="project-content">
-              <h3>Big-Five-App（性格診断アプリ）</h3>
-              <p>
-                ビッグファイブ理論をベースにした自己理解・キャリア再設計のためのWebアプリ。
-                Django REST Framework × Vue.js構成で、診断結果によってUIが変化する動的設計です。
-              </p>
-              <a href="https://big-five-app-of9f.onrender.com" class="project-btn">サイトを見る</a>
-            </div>
-          </article>
-
-          <!-- Portfolio SPA -->
-          <article class="project-card">
-            <div class="project-thumb">
-              <span class="material-symbols-outlined">web</span>
-            </div>
-            <div class="project-content">
-              <h3>ポートフォリオサイト</h3>
-              <p>
-                自身の制作力と世界観を一貫して見せるための静的HP。アニメーション・マテリアルテイストのUIを採用し、
-                Vercel＋国内サーバー(Xserver)の両方で運用できるようにしています。
-              </p>
-              <a href="#contact" class="project-btn">サイトを見る（Vercel）</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Contact ===== -->
-    <section id="contact" class="section-contact">
-      <div class="contact-wrapper">
-        <div class="contact-head">
-          <p class="eyebrow">Contact</p>
-          <h2>ご相談・ご依頼はこちらから。</h2>
-          <p class="lead">
-            制作のこと、アプリのこと、note / Xの設計のことなど、ざっくりした段階でも大丈夫です。
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a href="https://x.com/" class="contact-btn contact-x" target="_blank" rel="noopener noreferrer">
-            Xで相談する
-          </a>
-          <a href="https://note.com/" class="contact-btn contact-note" target="_blank" rel="noopener noreferrer">
-            noteを見る
-          </a>
-          <a href="mailto:hello@example.com" class="contact-btn contact-mail">
-            メールで連絡する
-          </a>
-        </div>
-
-        <p class="contact-note">
-          ※ 公開用デモなのでリンクは仮です。実運用時はフォームに差し替えます。
-        </p>
-      </div>
-      <footer class="contact-footer">
-        © 2025 Hayato Kimura — Portfolio
-      </footer>
-    </section>
-
-  </body>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
 </html>
